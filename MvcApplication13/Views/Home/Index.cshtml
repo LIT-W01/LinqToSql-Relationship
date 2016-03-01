@@ -1,0 +1,10 @@
+﻿@using DataLayer
+@model DataLayer.Person
+
+<h1>@Model.FirstName @Model.LastName</h1>
+<ul>
+    @foreach (Car car in Model.Cars)
+    {
+        <li>@car.Make @car.Model @car.Year</li>
+    }
+</ul>
